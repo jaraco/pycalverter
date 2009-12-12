@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: pyCalverter
+Version: 1.5
+Summary: Python Calendar Converter
+Home-page: https://launchpad.net/pycalverter
+Author: Mehdi Bayazee
+Author-email: bayazee@gmail.com
+License: GNU GPL v2
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Localization
+Classifier: Topic :: Utilities
