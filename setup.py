@@ -4,15 +4,15 @@ from distutils.core import setup
 import calverter
 
 setup(name = 'pyCalverter',
-      version = '1.5',
+      version = '1.5.0',
       description = 'Python Calendar Converter',
       author = 'Mehdi Bayazee',
       author_email = 'bayazee@gmail.com',
       url = 'https://launchpad.net/pycalverter',
       package_dir = {},
       packages = [""],
-      scripts = ["calverter"],
-      license='GNU GPL v2',
+      scripts = ["calverter.py"],
+      license='GPL v2',
       classifiers=[
       'Development Status :: 5 - Production/Stable',
       'Environment :: Plugins',
