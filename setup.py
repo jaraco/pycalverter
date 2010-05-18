@@ -11,7 +11,7 @@ setup(name = 'pyCalverter',
       url = 'https://launchpad.net/pycalverter',
       package_dir = {},
       packages = [""],
-      scripts = ["calverter.py"],
+      py_modules = ["calverter"],
       license='GPL v2',
       classifiers=[
       'Development Status :: 5 - Production/Stable',
