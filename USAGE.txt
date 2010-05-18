@@ -1,7 +1,7 @@
 # USAGE :
 
 from calverter import calverter
-cal = Calverter()
+cal = calverter()
 jd = cal.gregorian_to_jd(2007,07,01)
 wday = cal.jwday(jd)
 print "Jalali: "
