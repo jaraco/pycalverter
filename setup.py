@@ -4,11 +4,11 @@ from distutils.core import setup
 import calverter
 
 setup(name = 'pyCalverter',
-      version = '1.5.0',
+      version = '1.6.0',
       description = 'Python Calendar Converter',
       author = 'Mehdi Bayazee',
       author_email = 'bayazee@gmail.com',
-      url = 'https://launchpad.net/pycalverter',
+      url = 'https://bitbucket.org/bayazee/pycalverter/overview',
       package_dir = {},
       packages = [""],
       py_modules = ["calverter"],

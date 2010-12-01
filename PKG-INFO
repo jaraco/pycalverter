@@ -1,8 +1,8 @@
-Metadata-Version: 1.0
+Metadata-Version: 2.0
 Name: pyCalverter
-Version: 1.5
+Version: 1.6.0
 Summary: Python Calendar Converter
-Home-page: https://launchpad.net/pycalverter
+Home-page: https://bitbucket.org/bayazee/pycalverter/overview
 Author: Mehdi Bayazee
 Author-email: bayazee@gmail.com
 License: GNU GPL v2
