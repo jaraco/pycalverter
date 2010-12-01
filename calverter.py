@@ -24,7 +24,7 @@
 __author__ = "Mehdi Bayazee"
 __copyright__ = "Copyright (C) 2008-2010 Mehdi Bayazee"
 
-__version__ = "1.6.0"
+__version__ = "1.6.1"
 
 
 GREGORIAN_EPOCH = 1721425.5
@@ -189,16 +189,14 @@ class Calverter:
     def islamic_to_jd(self, year, month, day):
         "Determine Julian day from Islamic date"
           
-        return (day + math.ceil(29.5 * (month - 1)) + \
-            (year - 1) * 354 + \
-            math.floor((3 + (11 * year)) / 30) + \
-            self.ISLAMIC_EPOCH) - 1
+        return (day + math.ceil(29.5 * (month - 1)) + (year - 1) * 354 + \
+            math.floor((3 + (11 * year)) / 30) + ISLAMIC_EPOCH) - 1
      
     def jd_to_islamic(self, jd):
         "Calculate Islamic date from Julian day"
          
         jd = math.floor(jd) + 0.5
-        year = int(math.floor(((30 * (jd - self.ISLAMIC_EPOCH)) + 10646) / 10631))
+        year = int(math.floor(((30 * (jd - ISLAMIC_EPOCH)) + 10646) / 10631))
         month = int(min(12, math.ceil((jd - (29 + self.islamic_to_jd(year, 1, 1))) / 29.5) + 1))
         day = int(jd - self.islamic_to_jd(year, month, 1)) + 1;
         return year, month, day
@@ -220,7 +218,7 @@ class Calverter:
             mm = ((month - 1) * 30) + 6
      
         return day + mm + math.floor(((epyear * 682) - 110) / 2816) + (epyear - 1) * 365 + \
-            math.floor(epbase / 2820) * 1029983 + (self.JALALI_EPOCH - 1)
+            math.floor(epbase / 2820) * 1029983 + (JALALI_EPOCH - 1)
      
     def jd_to_jalali(self, jd):
         "Calculate Jalali date from Julian day"
