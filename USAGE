@@ -1,0 +1,25 @@
+# USAGE :
+
+from calverter import calverter
+cal = calverter()
+jd = cal.gregorian_to_jd(2007,07,01)
+wday = cal.jwday(jd)
+print "Jalali: "
+print cal.JALALI_WEEKDAYS[wday],
+print cal.jd_to_jalali(jd)
+print "\nIslamic: "
+print cal.ISLAMIC_WEEKDAYS[wday],
+print cal.jd_to_islamic(jd)
+
+if  cal.leap_islamic(1428) :
+    print 'Leap Isalmic year !'
+
+    
+# OUTPUT :
+
+Jalali: 
+Yekshanbeh (1386, 4, 10)
+
+Islamic: 
+al-ahad (1428, 6, 15)
+Leap Isalmic year !

@@ -5,7 +5,7 @@ import calverter
 
 setup(
     name='pyCalverter',
-    version='1.6.1',
+    version='1.6.2',
     description='Python Calendar Converter',
     author='Mehdi Bayazee',
     author_email='bayazee@gmail.com',
